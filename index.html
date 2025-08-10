@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Lory - Comédien & Figurant</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- ==================== Contenu principal du site ==================== -->
+    <div id="main-content" >
+        <!-- ==================== Navbar ==================== -->
+        <header>
+            <nav class="navbar navbar-fixed">
+                <a href="#" class="nav-logo">Marc Lory</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="#experiences" class="nav-link">Expériences</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="assets/images/attached_assets/CV - Cinéma_1753948698900.pdf" id="cv-download-btn" class="btn">
+                    <i class="fa-solid fa-download"></i> Télécharger mon CV
+                </a>                
+                
+                <div class="popup-overlay" id="popup-overlay">
+                    <div class="popup">
+                    <h2>Code requis</h2>
+                    <p>Pour télécharger le CV, entrez le code d'accès :</p>
+                    <input type="password" id="code-input" placeholder="Code d'accès" />
+                    <p id="error-message"></p>
+                    <div class="popup-buttons">
+                        <button id="cancel-btn">Annuler</button>
+                        <button id="submit-code">OK</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="toast-container" id="toast-container"></div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero"></div>
+        </header>
+
+        <main>
+            <!-- ==================== Section "À propos" ==================== -->
+            <section id="about" class="section-container scroll-reveal fade-up">
+                <h2>À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/attached_assets/Photo portrait - LORY Marc_1753948731388.jpg" alt="Portrait de Marc Lory">
+                    </div>
+                    <div class="about-text">
+                        <h3>Marc Lory - Figurant/Comédien Cinéma</h3>
+                        <p class="first-text">
+                            Je suis constamment à la recherche de nouvelles expériences pour enrichir ma palette de jeu. Discipliné, ponctuel et toujours prêt à relever des défis, je m'investis pleinement dans chaque rôle pour servir la vision du réalisateur.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Section "Expériences" ==================== -->
+            <section id="experiences" class="section-container scroll-reveal fade-left">
+                <h2>Mes Expériences</h2>
+                <div class="experiences-grid">
+                    <!-- Carte 1 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front card-future">
+                                <h4>TF1 : Les 12 Coups de Midi</h4>
+                                <p>Sélectionné parmi 100 candidats. Prestation face caméra en direct, gestion du stress.</p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>Une excellente compréhension du fonctionnement d'un plateau de tournage et de la rigueur requise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte 2 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h4>Vidéo immersive YouTube</h4>
+                                <p>Rôle maquillé (grand-père) dans un cache-cache géant. Improvisation, mime, jeu comique. Tournage multi-caméra synchronisé.                                </p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>J'ai appris l'art de l'improvisation comique et la synchronisation avec plusieurs caméras.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte 3 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h4>Streamer sur Twitch</h4>
+                                <p>Créateur de contenu live. Plus de 1 000 abonnés, 1 620 € récoltés. Maîtrise caméra, improvisation, gestion de communauté.</p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>Cette expérience m'a donné une aisance naturelle face caméra et une capacité d'adaptation en temps réel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte 4 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h4>Préparation statue vivante</h4>
+                                <p>Travail de personnage et maquillage pro. Créativité et implication saluées malgré l'annulation.</p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>J'ai développé mes compétences en création de personnage et en maquillage artistique.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Carte 5 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h4>Pièce de théâtre en primaire</h4>
+                                <p>Premiers pas sur scène. Découverte de la scène, du jeu et du lien avec le public.</p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>Cette première expérience a révélé ma passion pour la scène et le contact avec le public.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte 6 -->
+                    <div class="experience-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h4>Mes expériences à venir</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis, minus repudiandae quas officiis earum?</p>
+                            </div>
+                            <div class="card-back">
+                                <h5>Ce que ça m’a apporté</h5>
+                                <p>Cette première expérience a révélé ma passion pour la scène et le contact avec le public.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Section "Galerie" ==================== -->
+            <section id="gallery" class="section-container scroll-reveal fade-right">
+                <h2>Galerie Photos</h2>
+                <div class="gallery-grid">
+                    <img src="assets/images/attached_assets/Photo en pied extérieur - LORY Marc_1753948731387.jpg" alt="Photo de Marc Lory en situation 1">
+                    <img src="assets/images/attached_assets/Photo en pied - Assis - LORY Marc_1753948731383.jpg" alt="Photo de Marc Lory en situation 2">
+                    <img src="assets/images/attached_assets/Photo en pied extérieur Fleurs - LORY Marc_1753948731387.jpg" alt="Photo de Marc Lory en situation 3">
+                    <img src="assets/images/attached_assets/Photo en pied extérieur cheval - LORY Marc_1753948731387.jpg" alt="Photo de Marc Lory en situation 4">
+                    <img src="assets/images/attached_assets/Photo en pied extérieur plage - LORY Marc_1753948731387.jpg" alt="Photo de Marc Lory en situation 5">
+                    <img src="assets/images/attached_assets/costard.png" alt="Photo de Marc Lory en situation 6">
+                </div>
+            </section>
+            
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-img" src="" alt="Agrandissement">
+            </div>
+            
+
+            <!-- ==================== Section "Contact" ==================== -->
+            <section id="contact" class="section-container scroll-reveal fade-left">
+                <h2 class="section-title contact-title">Contactez-moi</h2>
+                <div class="contact-content">
+                  
+                  <div class="contact-form-container">
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/xblkqabr">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">🚀 Envoyer</button>
+                        <div id="form-message" class="hidden"></div>
+                    </form>
+                </div>
+                <div id="form-message" class="hidden"></div>
+                <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                        const form = document.getElementById("contact-form");
+                        const messageBox = document.getElementById("form-message");
+
+                        form.addEventListener("submit", async function (e) {
+                            e.preventDefault();
+
+                            messageBox.style.display = "block";
+                            messageBox.textContent = "⏳ Envoi en cours...";
+                            messageBox.className = ""; 
+
+                            try {
+                                const formData = new FormData(form);
+                                const response = await fetch(form.action, {
+                                    method: "POST",
+                                    body: formData,
+                                    headers: { Accept: "application/json" }
+                                });
+
+                                if (response.ok) {
+                                    messageBox.textContent = "✅ Message envoyé avec succès !";
+                                    messageBox.classList.add("success");
+                                    form.reset();
+                                } else {
+                                    messageBox.textContent = "❌ Erreur, réessayez.";
+                                    messageBox.classList.add("error");
+                                }
+                            } catch {
+                                messageBox.textContent = "⚠️ Problème de connexion.";
+                                messageBox.classList.add("error");
+                            }
+
+                            setTimeout(() => {
+                                messageBox.style.opacity = "0";
+                                setTimeout(() => {
+                                    messageBox.style.display = "none";
+                                    messageBox.style.opacity = "1";
+                                }, 500);
+                            }, 4000);
+                        });
+                    });
+                </script>
+                
+                
+                  
+                  <div class="contact-info glass-card">
+                    <h3 contact-title-h3>📍 Informations</h3>
+                    <ul>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>78920 Ecquevilly</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:lorymarc.pro@gmail.com">lorymarc.pro@gmail.com</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-phone"></i>
+                       <a href="tel:+33637943938">06 37 94 39 38</a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/tonprofil" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                      </li>
+                    </ul>
+
+                    <div style="width: 100%; height: 250px; margin-top: 110px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.1547366395725!2d1.921823076825725!3d48.94730219555359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e69c87bfcf4fd5%3A0x40b82c3688c2a80!2s78920%20Ecquevilly!5e0!3m2!1sfr!2sfr!4v1691660189274!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                </div>
+              </section>              
+        </main>
+
+        <!-- ==================== Footer ==================== -->
+        <footer>
+            <p>&copy; 2025 Marc Lory. Tous droits réservés.</p>
+        </footer>
+
+    </div>
+
+    <script src="cookies.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const galleryImages = document.querySelectorAll('.gallery-grid img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const closeBtn = document.querySelector('.lightbox .close');
+    
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const revealElements = document.querySelectorAll(".scroll-reveal");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navbar = document.querySelector(".navbar-fixed");
+            let lastScroll = 0;
+
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.scrollY;
+
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    navbar.classList.add("hide");
+                } else {
+                    navbar.classList.remove("hide");
+                }
+
+                lastScroll = currentScroll;
+            });
+        });
+
+
+    </script>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Agrandissement">
+    </div>    
+</body>
+</html>
