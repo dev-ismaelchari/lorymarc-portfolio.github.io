@@ -365,7 +365,7 @@ h2 {
     padding: 1.5rem;
 }
 .card-front {
-    background: url(assets/images/scene.png);
+    background: url(scene.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 375px;
